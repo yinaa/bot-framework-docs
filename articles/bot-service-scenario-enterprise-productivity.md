@@ -11,7 +11,7 @@ ms.date: 12/13/2017
 # Enterprise Productivity Bot Scenario
 The Enterprise Bot shows how you can increase your productivity by integrating a bot with your Office 365 calendar and other services.
 
-Quickly accessing customer information without having to have a bunch of windows open is what the Enterprise Productivity Bot is all about. Using simple chat commands, a sales rep can look up a customer and check their next appointment via the Graph API and Office 365. From there they can access customer specific information stored in Dynamics CRM such as get a case or create a new one.
+Quickly accessing customer information without having to have a bunch of windows open is what the Enterprise Productivity Bot is all about. Using simple chat commands, a sales rep can look up a customer and check their next appointment via the Microsoft Graph API and Office 365. From there they can access customer specific information stored in Dynamics CRM such as get a case or create a new one.
 
 ![The Enterprise bot diagram](~/media/scenarios/bot-service-scenario-enterprise-bot.png)
 
@@ -19,7 +19,7 @@ Here is the logic flow of an Enterprise Productivity bot:
 
 1. The employee accesses the Enterprise Productivity bot.
 2. Azure Active Directory validates the employee's identity.
-3. The Enterprise Productivity bot is able to query the employee's Office 365 calendar via the Azure Graph.
+3. The Enterprise Productivity bot is able to query the employee's Office 365 calendar via the Microsoft Graph.
 4. Using data gathered from the calendar, the bot accesses case information in Dynamics CRM.
 5. The information is returned to the employee who can filter down the data without leaving the bot.
 6. Application insights gathers runtime telemetery to help development with bot performance and usage.
@@ -32,7 +32,7 @@ Because Bots are accessible from a variety of channels, you could use it at your
 ## Components you'll use
 The Enterprise Productivity Bot uses the following components:
 -   Azure AD for Authentication
--   Graph API to Office 365
+-   Microsoft Graph API to Office 365
 -   Dynamics CRM
 -   Application Insights
 
